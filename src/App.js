@@ -1,8 +1,10 @@
 import './App.css';
+import NavBar from ""
 
 function App() {
   return (
     <div>
+      <NavBar />
     </div>
   );
 }
