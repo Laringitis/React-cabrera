@@ -5,10 +5,10 @@ import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
-    <div>
+    <nav className= 'd-flex justify-content-between'>
       <NavBar/>
       <ItemListContainer/>
-    </div>
+      </nav>
   );
 }
 
