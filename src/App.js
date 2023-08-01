@@ -5,10 +5,14 @@ import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
-    <nav className= 'd-flex justify-content-between'>
+    <>
+    <nav className= 'd-flex justify-content-evenly px-4 py-3 bg-success text-light'>
       <NavBar/>
-      <ItemListContainer/>
       </nav>
+      <div className="d-flex justify-content-center">
+      <ItemListContainer greeting={('Bienvenidos a mi pre-entrega 1')}/>
+      </div>
+    </>
   );
 }
 

@@ -1,8 +1,10 @@
 export default function CartWidget (){
-    return(
-        <>
-        <button className="order-4 material-icons">shopping_cart</button>
-        <h2 className="order-5">4</h2>
-        </>
-    )
+	return(
+		<>
+			<div className="d-flex">
+				<div className=" material-symbols-outlined">shopping_cart</div>
+				<h5>4</h5>
+				</div>
+		</>
+	)
 }
