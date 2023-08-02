@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-
-import CartWidget from "./CartWidget"
-
-export default function NavBar (){
-    return(
-        <>
-            <ul>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Promociones</a></li>
-            </ul>
-            <CartWidget/>
-        </>
-    )
-}
-=======
 import CartWidget from "./CartWidget"
 import logo from "../assents/pngwing1.png"
 export default function NavBar (){
@@ -31,4 +14,3 @@ export default function NavBar (){
         </>
     )
 }
->>>>>>> 090a53c1046328787458467a5166c34274f4d8df

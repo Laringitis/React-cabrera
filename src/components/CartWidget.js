@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-export default function CartWidget (){
-    return(
-        <>
-        <button className="material-icons">shopping_cart</button>
-        <h2>4</h2>
-        </>
-    )
-=======
 export default function CartWidget (){
 	return(
 		<>
@@ -16,5 +7,4 @@ export default function CartWidget (){
 				</div>
 		</>
 	)
->>>>>>> 090a53c1046328787458467a5166c34274f4d8df
 }
