@@ -1,4 +1,6 @@
+
 import CartWidget from "./CartWidget"
+
 export default function NavBar (){
     return(
         <>
@@ -7,7 +9,7 @@ export default function NavBar (){
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Promociones</a></li>
             </ul>
-        <CartWidget/>
+            <CartWidget/>
         </>
     )
 }
