@@ -11,4 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
 
+=======
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+>>>>>>> 090a53c1046328787458467a5166c34274f4d8df
