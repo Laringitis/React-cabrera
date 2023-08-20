@@ -11,7 +11,7 @@ function App() {
             <NavBar/>
         </nav>
         <div className="d-flex justify-content-center">
-            <ItemListContainer greeting={('Bienvenidos a mi pre-entrega 1')}/>
+            <ItemListContainer />
         </div>
         <Container/>
         </>

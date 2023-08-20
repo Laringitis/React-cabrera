@@ -4,12 +4,12 @@ export default function ItemCount ({stock, initial, onAdd}){
         const [contador, Setcontador]= useState= (initial)
         const sumar = () => {
             if (contador < stock){
-                Setcontador(contador + 1)
+                Setcontador(contador+1)
             }
         }
         const restar = () => {
-            if (contador > 0){
-                Setcontador(contador - 1)
+            if (contador > 1){
+                Setcontador(contador-1)
             }
         }
 
