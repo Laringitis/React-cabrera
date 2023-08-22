@@ -10,3 +10,4 @@ export default function Item (id, name, price, img, description){
         </>
     )
 }
+

@@ -1,17 +1,17 @@
-import { useState} from 'react'
-import { useEffect } from 'react'
-import { getProductos } from './productos'
+import { useState, useEffect } from 'react';
+import { getProductos } from '../productos'
 import ItemCount from './ItemCount'
 import Itemlist from './Itemlist'
 
 
 export default function ItemListContainer ({greeting}){
-    const [productos, setProductos] = useState ([])
+    
+    const [productos, setproductos] = useState([])
 
     useEffect(() => {
         getProductos()
             .then(Response=> {
-                setProductos(Response)
+                setproductos(Response)
             })
             .catch (error=> {
                 console.error(error)
