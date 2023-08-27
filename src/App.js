@@ -2,7 +2,7 @@ import './index.css';
 import {BrowserRouter, Routes , Route} from 'react-router-dom';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-import Itemdetailcontainer from './components/Itemdetailcontainer';
+import DetalleContainer from './components/DetalleContainer'
 
 
 function App() {
@@ -14,15 +14,17 @@ function App() {
         </nav>
         
         <Routes>
-            <Route path= '/' element={ItemListContainer}/>
-            <Route path= '/category/:categoryId' element={ItemListContainer}/>
-            <Route path='./item/:Item.id' element={Itemdetailcontainer}/>
+            <Route path= '/' element={<ItemListContainer/>}/>
+            <Route path= '/category/:categoryId' element={<ItemListContainer/>}/>
+            <Route path='./item/:Item.id' element={<DetalleContainer/>}/>
             <Route path= '*' element={<h1>404 NOT FOUND</h1>}/>
         </Routes>
 
         <div className="d-flex justify-content-center">
-            <ItemListContainer />
+            <ItemListContainer greeting={'Bienvenido'} />
+            <DetalleContainer/>
         </div>
+
 
         </BrowserRouter>
         </>

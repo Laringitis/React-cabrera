@@ -1,27 +1,31 @@
 import { useState, useEffect } from 'react';
-import { getProductos } from '../productos'
-import ItemCount from './ItemCount'
+import {getProductos,  getProductByCategory } from '../productos'
 import Itemlist from './Itemlist'
 
+import { useParams } from 'react-router-dom';
 
-export default function ItemListContainer ({greeting}){
+
+const ItemListContainer = ({greeting}) => {
     
-    const [productos, setproductos] = useState([])
+    const [productos, setProductos] = useState([]);
+    const {categoryId} = useParams()
 
     useEffect(() => {
-        getProductos()
+        const asyncFunc = categoryId ? getProductByCategory : getProductos;
+        asyncFunc(categoryId)
             .then(Response=> {
-                setproductos(Response)
+                setProductos(Response)
             })
             .catch (error=> {
                 console.error(error)
             })
-    }, [])
+    }, [categoryId])
     return (
         <>
         <h1>{greeting}</h1>
         <Itemlist productos={productos}/>
-        <ItemCount initial= {1} stock= {8} onAdd={(contador)=> console.log ('Cantidad agregada', contador)}/>
         </>
     )
 }
+
+export default ItemListContainer
